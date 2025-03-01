@@ -1,4 +1,4 @@
-##Resumen
+## Resumen
 # SophiaAI
 Building AI course proyect
 Proyecto: IA Filosófica - Un Explorador de Pensamiento Profundo
