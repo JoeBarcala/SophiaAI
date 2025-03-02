@@ -1,5 +1,8 @@
 ## Resumen
 # SophiaAI
+## Summary  
+SophiaAI es un chatbot filosófico que analiza, interpreta y genera respuestas basadas en textos filosóficos clásicos y contemporáneos. Utiliza modelos avanzados de procesamiento de lenguaje natural para fomentar el pensamiento crítico y el debate profundo.  
+
 Building AI course proyect
 Proyecto: IA Filosófica - Un Explorador de Pensamiento Profundo
 
