@@ -26,10 +26,41 @@ SophiaAI será una herramienta flexible que podrá utilizarse en diversos entorn
 
 A pesar de su potencial, SophiaAI enfrentará ciertos desafíos. La filosofía es un campo abierto a múltiples interpretaciones, lo que significa que la IA podría no captar completamente la riqueza de ciertos argumentos o perspectivas. La calidad de sus respuestas dependerá de la calidad y diversidad de sus fuentes de datos. Un conjunto de datos incompleto o sesgado podría afectar su objetividad. Existe el riesgo de que algunos usuarios utilicen la IA para justificar posturas filosóficas de manera errónea o manipuladora. La implementación de modelos avanzados de IA requiere potencia computacional significativa y una constante actualización de datos para garantizar respuestas precisas y relevantes.
 
-6. ¿Qué sigue?
+6. Demostración con código
+
+A continuación, se presenta un código sencillo de un chatbot filosófico en Python utilizando un modelo básico de procesamiento de lenguaje natural:
+
+```python
+import random
+
+def sophia_ai(question):
+    responses = {
+        "libre albedrío": "El concepto de libre albedrío ha sido debatido por siglos. Platón y Aristóteles lo apoyaban, pero deterministas como Spinoza lo niegan.",
+        "sentido de la vida": "El sentido de la vida es un tema complejo. Para Sartre, lo creamos nosotros mismos; para Nietzsche, es una afirmación de la voluntad de poder.",
+        "moral": "La moralidad es relativa según algunas corrientes filosóficas, mientras que otras defienden principios universales como el imperativo categórico de Kant.",
+        "epistemología": "La epistemología estudia el conocimiento. Descartes buscaba certeza absoluta, mientras que Hume argumentaba por el escepticismo.",
+        "default": "Esa es una gran pregunta. Te recomendaría leer a varios filósofos para tener una perspectiva más amplia."
+    }
+    for key in responses:
+        if key in question.lower():
+            return responses[key]
+    return responses["default"]
+
+while True:
+    question = input("Pregúntame algo sobre filosofía: ")
+    if question.lower() in ["salir", "exit"]:
+        break
+    print(sophia_ai(question))
+```
+
+7. Agradecimientos
+
+Este proyecto se inspira en el legado de los grandes pensadores de la historia y en el potencial de la inteligencia artificial para fomentar el pensamiento crítico. Se utilizarán fuentes de dominio público y herramientas de IA de código abierto, a quienes se les otorgará el debido crédito.
+
+8. ¿Qué sigue?
 
 Para mejorar SophiaAI y ampliar su impacto, se plantean futuras actualizaciones como una interfaz gráfica intuitiva que integre visualizaciones interactivas representando esquemas filosóficos y conexiones entre teorías. Se desarrollará un modo de debate estructurado donde la IA adopte diferentes posturas filosóficas y argumente a favor o en contra, permitiendo un diálogo más dinámico. Se incorporará retroalimentación de expertos para asegurar respuestas más precisas y fundamentadas. Además, se expandirá su capacidad a soporte multilingüe para responder en múltiples idiomas y adaptarse a diferentes tradiciones filosóficas.
 
-7. Agradecimientos
+9. Agradecimientos
 
 Este proyecto se inspira en el legado de los grandes pensadores de la historia y en el potencial de la inteligencia artificial para fomentar el pensamiento crítico. Se utilizarán fuentes de dominio público y herramientas de IA de código abierto, a quienes se les otorgará el debido crédito.
